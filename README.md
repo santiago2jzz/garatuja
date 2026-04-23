@@ -130,6 +130,6 @@ funções são blocos de código independentes chamados pelo nome, enquanto mét
 const pessoa = new Pessoa(); pessoa.idade = 25; // Chama o set console.log(pessoa.idade); // Chama o get
 
 const srv = Bun.serve({ port: 8080, routes: { "/wspeed": () => new Response(
-<a href='https://www.reddit.com/r/brasilivre/comments/klpyrk/goku_careca/'>clica</a> , { headers: { "Content-Type": "text/html"}} ) } , fetch(request) { return new Response("67", {headers: {'content-Type': "text/html"}}) }
+<a href='https://www.reddit.com/r/BayernMunich/comments/1spzd3j/never_change_olise_never_change/'>clica</a> , { headers: { "Content-Type": "text/html"}} ) } , fetch(request) { return new Response("67", {headers: {'content-Type': "text/html"}}) }
 
 })
