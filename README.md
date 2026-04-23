@@ -5,7 +5,7 @@ Css: Css serve para dar uma "maquiagem" para o site. Ele é quem faz a interface
 
 ===================================================================================================================================================================
 
-#Js (JavaScript) vs Ts(Type Scipt) Vs Jv(Java)
+# Js (JavaScript) vs Ts(Type Scipt) Vs Jv(Java)
 
 COMO CRIAR UMA FUNÇÃO
 
