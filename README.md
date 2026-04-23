@@ -129,7 +129,7 @@ funções são blocos de código independentes chamados pelo nome, enquanto mét
 
 const pessoa = new Pessoa(); pessoa.idade = 25; // Chama o set console.log(pessoa.idade); // Chama o get
 
-const srv = Bun.serve({ port: 8080, routes: { "/wspeed": () => new Response(
-<a href='https://www.reddit.com/r/BayernMunich/comments/1spzd3j/never_change_olise_never_change/'>clica</a> , { headers: { "Content-Type": "text/html"}} ) } , fetch(request) { return new Response("67", {headers: {'content-Type': "text/html"}}) }
+const srv = Bun.serve({ port: 8080, routes: { "/w olise": () => new Response(
+<a href='https://www.google.com/search?q=real+madrid+e+bayern&sca_esv=2a30541cd13cdf7a&ei=mBTqaZuvNtL_5OUPmue2iQY&biw=1920&bih=945&ved=0ahUKEwib26fGgISUAxXSP7kGHZqzLWEQ4dUDCBE&uact=5&oq=real+madrid+e+bayern&gs_lp=Egxnd3Mtd2l6LXNlcnAiFHJlYWwgbWFkcmlkIGUgYmF5ZXJuSABQAFgAcAB4AJABAJgBAKABAKoBALgBA8gBAJgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAA&sclient=gws-wiz-serp#sie=m;/g/11y_jvt5jc;2;/m/0c1q0;dt;fp;1;;;;-1'>clica</a> , { headers: { "Content-Type": "text/html"}} ) } , fetch(request) { return new Response("67", {headers: {'content-Type': "text/html"}}) }
 
 })
