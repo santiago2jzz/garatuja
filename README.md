@@ -1,11 +1,34 @@
 # Garatujas - Daniel Santiago Mendonça
+## Revisão Básica de HTML, Css e JavaScript
 HTML: Html é uma linguagem de marcação, onde ele serve para estrutuar o site.
 
 Css: Css serve para dar uma "maquiagem" para o site. Ele é quem faz a interface para o site.
 
+JavaScript: É o BackEnd ou FrontEnd também o que de certa forma se encaixa nesse trisal.
+
+===================================================================================================================================================================
+## Leitura e Elaboração de Perguntas (Autoavaliação) do POO
+
+1. Pergunta sobre Estrutura: Qual a diferença entre classe e objeto?
+Resposta: A classe é o molde (o conceito) e o objeto é o que é criado a partir do molde (a instância concreta).
+
+2. Pergunta sobre Encapsulamento: Por que não devemos acessar atributos diretamente?
+Resposta: O encapsulamento com private e métodos Get/Set garante a segurança dos dados, permitindo validações antes de modificar um atributo.
+ 
+3. Pergunta sobre Herança: O que acontece se uma subclasse herdar um método, mas precisar que ele funcione diferente?
+Resposta: Usa-se a sobrescrita de método (override), onde a subclasse implementa o comportamento específico do método herdado.
+
+4. Pergunta sobre Polimorfismo: Cite um exemplo prático de polimorfismo.
+Resposta: Uma superclasse Animal com um método emitirSom(). As subclasses Cachorro e Gato herdam emitirSom(), mas o Cachorro faz "Au" e o Gato faz "Miau". 
+
+5. Pergunta sobre Construtores: O que é a palavra-chave self ou this?
+Resposta: Ela referencia o próprio objeto que está sendo criado ou manipulado, permitindo diferenciar os atributos da classe dos parâmetros recebidos.
+
+6. Pergunta sobre Métodos: Qual a diferença entre métodos estáticos e de instância?
+Resposta: Métodos de instância agem sobre dados de um objeto específico, enquanto métodos estáticos pertencem à classe e podem ser chamados sem instanciar objetos. 
 ===================================================================================================================================================================
 
-## Js (JavaScript) vs Ts(Type Scipt) Vs Jv(Java)
+## Js (JavaScript) vs Ts(Type Script) Vs Jv(Java)
 
 COMO CRIAR UMA FUNÇÃO
 
@@ -27,7 +50,7 @@ Jv:Para criar uma função (método) em Java, defina seu modificador de acesso (
 
 modificadorRetorno nomeDaFuncao(parametros) { // Corpo do método // return valor; // Necessário se não for void }
 
-===========================================================================================================================================================
+===================================================================================================================================================================
 
 JS: FUNCTION Em JavaScript, uma função é um bloco de código reutilizável que executa uma tarefa quando é chamado. function saudar() { console.log("Olá, bem-vindo!"); } Method Um método é uma função que está associada a um objeto e pode acessar ou modificar os dados desse objeto. const carro = { marca: "Ford", buzinar: function() { console.log("Beep beep!"); } };
 
@@ -35,7 +58,7 @@ variable Uma variável é um espaço na memória usado para armazenar dados que 
 
 attribute Um atributo é uma propriedade de um objeto que armazena um valor ou característica relacionada a ele. const botao = document.querySelector('button'); botao.setAttribute('data-id', '123');
 
-================================================================================================================================================================
+===================================================================================================================================================================
 
 JAVA: Function Em Java, o termo “função” geralmente é chamado de método, sendo um bloco de código que executa uma tarefa específica quando invocado. public class Calculadora { // Função que recebe dois inteiros e retorna a soma public int somar(int a, int b) { return a + b; }
 
@@ -86,7 +109,7 @@ constructor(nome: string, preco: number, id: number) {
 }
 }
 
-=========================================================================================================================================================================
+====================================================================================================================================================================
 
 GET E SET
 
@@ -98,7 +121,7 @@ get idade(): number { return this._idade; }
 
 set idade(novaIdade: number) { if (novaIdade < 0) { throw new Error("Idade não pode ser negativa"); } this._idade = novaIdade; } }
 
-=========================================================================================================================================================================
+====================================================================================================================================================================
 
 DIFERENÇA ENTRE METODO E FUNÇÃO
 
