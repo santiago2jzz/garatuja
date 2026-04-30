@@ -6,7 +6,7 @@ Css: Css serve para dar uma "maquiagem" para o site. Ele é quem faz a interface
 
 JavaScript: É o BackEnd ou FrontEnd também o que de certa forma se encaixa nesse trisal.
 
-===================================================================================================================================================================
+---
 ## Leitura e Elaboração de Perguntas (Autoavaliação) do POO
 
 1. Pergunta sobre Estrutura: Qual a diferença entre classe e objeto?
@@ -26,7 +26,7 @@ Resposta: Ela referencia o próprio objeto que está sendo criado ou manipulado,
 
 6. Pergunta sobre Métodos: Qual a diferença entre métodos estáticos e de instância?
 Resposta: Métodos de instância agem sobre dados de um objeto específico, enquanto métodos estáticos pertencem à classe e podem ser chamados sem instanciar objetos. 
-===================================================================================================================================================================
+---
 
 ## Js (JavaScript) vs Ts(Type Script) Vs Jv(Java)
 
@@ -50,7 +50,7 @@ Jv:Para criar uma função (método) em Java, defina seu modificador de acesso (
 
 modificadorRetorno nomeDaFuncao(parametros) { // Corpo do método // return valor; // Necessário se não for void }
 
-===================================================================================================================================================================
+---
 
 JS: FUNCTION Em JavaScript, uma função é um bloco de código reutilizável que executa uma tarefa quando é chamado. function saudar() { console.log("Olá, bem-vindo!"); } Method Um método é uma função que está associada a um objeto e pode acessar ou modificar os dados desse objeto. const carro = { marca: "Ford", buzinar: function() { console.log("Beep beep!"); } };
 
@@ -58,7 +58,7 @@ variable Uma variável é um espaço na memória usado para armazenar dados que 
 
 attribute Um atributo é uma propriedade de um objeto que armazena um valor ou característica relacionada a ele. const botao = document.querySelector('button'); botao.setAttribute('data-id', '123');
 
-===================================================================================================================================================================
+---
 
 JAVA: Function Em Java, o termo “função” geralmente é chamado de método, sendo um bloco de código que executa uma tarefa específica quando invocado. public class Calculadora { // Função que recebe dois inteiros e retorna a soma public int somar(int a, int b) { return a + b; }
 
@@ -86,7 +86,7 @@ public Carro(String marca, int ano) {
 }
 }
 
-====================================================================================================================================================================
+---
 
 TS:
 
@@ -109,7 +109,7 @@ constructor(nome: string, preco: number, id: number) {
 }
 }
 
-====================================================================================================================================================================
+---
 
 GET E SET
 
@@ -121,7 +121,7 @@ get idade(): number { return this._idade; }
 
 set idade(novaIdade: number) { if (novaIdade < 0) { throw new Error("Idade não pode ser negativa"); } this._idade = novaIdade; } }
 
-====================================================================================================================================================================
+---
 
 DIFERENÇA ENTRE METODO E FUNÇÃO
 
