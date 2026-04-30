@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --grid-info-size: 250px;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+    }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "social info   content"
+        "footer footer footer";
+      grid-template-columns: fit-content var(--grid-info-size) 1fr;
+      grid-template-rows: 1fr 120px;
+      gap: .5rem;
+      padding: .5rem;
+      min-height: 100svh;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    
+      grid-area: info;
+
+      .thumb {
+        width: calc(var(--grid-info-size) - 20px);
+        height: calc(var(--grid-info-size) - 20px);
+        background-color: lightgray;
+        border-radius: 50%;
+        flex: none;
+        z-index: 2;
+        overflow: clip;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      section {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100%;
+        margin-top: -4rem;
+        padding-top: 4rem;
+        z-index: 1;
+        clip-path: polygon(0 20px, 0 100%, 100% 100%, 100% 0);
+      }
+    }
+
+    main {
+      grid-area: content;
+      position: relative;
+      isolation: isolate;
+      padding: 2rem;
+
+
+
+      &:before {
+        content: "";
+        background-color: rgb(6, 4, 8);
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        grid-auto-rows: minmax(180px,230px);
+        gap: .5rem;
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        :first-child {
+          grid-row: span 2;
+          grid-column: 1 / span 3;
+        }
+      }
+    } 
+
+    .social {
+      grid-area: social;
+      display: flex;
+      flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+
+        img {
+      height: 2rem;
+      width: 2rem;
+    }
+    }
+
+
+    footer {
+      grid-area: footer;
+    }
+
+   
+      body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('02ad97ed-ddb9-4b75-b6e7-901a61a79448.jpg') no-repeat center/cover;
+  filter: blur(8px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p,aside {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+section,footer {
+  text-align: center;
+}
+  </style>
+</head>
+
+<body>
+<aside>
+    <div class="thumb">
+      <img src="messi.jpg">
+    </div>
+    <section style="text-align: left;">   <br>- FC Barcelona (35 Títulos): <br>
+Champions League (4):<br> 2005/06, 2008/09, 2010/11, 2014/15 <br>
+La Liga (10):<br> 2004/05, 2005/06, 2008/09, 2009/10,<br> 2010/11, 2012/13, 2014/15, <br>2015/16, 2017/18, 2018/19<br>
+Copa do Rei (7):<br> 2008/09, 2011/12, 2014/15,<br> 2015/16, 2016/17, 2017/18, 2020/21<br>
+Supercopa da Espanha (8):<br> 2005, 2006, 2009, 2010,<br> 2011, 2013, 2016, 2018<br>
+Mundial de Clubes da FIFA (3):<br> 2009, 2011, 2015<br>
+Supercopa da UEFA (3):<br> 2009, 2011, 2015 <br>
+- Seleção Argentina(6 Títulos):<br>
+Copa do Mundo FIFA (1):<br> 2022<br>
+Copa América (2):<br> 2021, 2024<br>
+Finalíssima (CONMEBOL-UEFA) (1):<br> 2022<br>
+Ouro Olímpico (1):<br> 2008<br>
+Copa do Mundo Sub-20 (1):<br> 2005 <br>
+- Paris Saint - Germain(3 Títulos): <br>
+Campeonato Francês (Ligue 1) (2):<br> 2021/22, 2022/23<br>
+Supercopa da França (1):<br> 2022 <br>
+- Inter Miami (2 Títulos):<br>
+Leagues Cup (1):<br> 2023<br>
+Supporters' Shield (1):<br> 2024<br>
+- Principais Títulos Individuais:<br>
+Bola de Ouro (8):<br> 2009, 2010, 2011, 2012, 2015, 2019, 2021, 2023<br>
+Melhor Jogador do Mundo da FIFA/The Best (8): <br> 2009, 2010, 2011, 2012, 2015, <br>2019, 2021, 2023<br>
+Chuteira de Ouro da Europa (6): <br>2009/10, 2011/12, <br>
+
+</section>
+  </aside>
+  <main>
+    <article>
+      <h1>Lionel Messi, o melhor jogador da história</h1></br>
+      <p>
+Lionel Messi, nascido em 24 de junho de 1987 em Rosário, Argentina, é amplamente considerado um dos maiores futebolistas da história. Ídolo do FC Barcelona, onde conquistou 34 títulos e marcou 672 gols, o atacante venceu a Copa do Mundo de 2022 pela Argentina e detém o recorde de 8 Bolas de Ouro, atuando atualmente pelo Inter Miami.
+      </p>
+    </article>
+    <div class="gallery">
+      <img src="messi1.png" alt="Image 1">
+      <img src="messi2.jpg" alt="Image 2">
+      <img src="messi3.jpg" alt="Image 3">
+      <img src="messi4.jpg" alt="Image 4">
+      <img src="messi5.jpg" alt="Image 5">
+      <img src="messi6.jpg" alt="Image 6">
+      <img src="messi7.jpg" alt="Image 7">
+      <img src="messi8.jpg" alt="Image 8">
+      <img src="messi9.jpg" alt="Image 9">
+      <img src="messi10.jpg" alt="Image 10">
+      <img src="messi11.jpg" alt="Image 11">
+      <img src="messi12.jpg" alt="Image 12">
+      <img src="messi13.jpg" alt="Image 13">
+      <img src="messi14.jpg" alt="Image 14">
+      <img src="messi15.jpg" alt="Image 15">
+      <img src="messi16.jpg" alt="Image 16">
+      <img src="messi17.jpg" alt="Image 17">
+      <img src="messi18.jpg" alt="Image 18">
+      <img src="messi19.jpg" alt="Image 19">
+    </div>
+  </main>
+    
+  <div class="social">
+    <a href="https://www.facebook.com/leomessi"><img src="https://api.iconify.design/icon-park-solid:facebook.svg?color=%23bdbdbd" alt="facebook"></a>
+    <a href="https://www.twitter.com/teammessi"><img src="https://api.iconify.design/icon-park-solid:twitter.svg?color=%23bdbdbd" alt="twitter"></a>
+    <a href="https://www.instagram.com/leomessi"><img src="https://api.iconify.design/icon-park-solid:instagram.svg?color=%23bdbdbd" alt="instagram"></a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Daniel Santiago. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
